@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Favicone is linked here -->
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
+
+    <!-- Css is liked here -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font is linked here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section starts here -->
+    <section id="header">
+        <header>
+            <p class="light">Student Portal</p>
+        </header>
+    </section>
+
+
+    <!-- Search and FeatureBtn section starts here -->
+    <section id="Search" class="container">
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button class="btn" onclick="search()">Search</button>
+        </div>
+        <div class="featureBtn">
+            <button class="btn" onclick="AtoZ()">Sort A->Z</button>
+            <button class="btn" onclick="ZtoA()">Sort Z->A</button>
+            <button class="btn" onclick="marksSort()">Sort By Marks</button>
+            <button class="btn" onclick="passingSort()">Sort By Passing</button>
+            <button class="btn" onclick="classSort()">Sort By Class</button>
+            <button class="btn" onclick="genderSort()">Sort By Gender</button>
+        </div>
+    </section>
+
+
+    <!-- Table section starts here -->
+    <section id="table" class="container">
+        <table class="content_table">
+            <thead id="table_head">
+                <tr height="45px">
+                    <td width="6%">ID</td>
+                    <td width="20%">Name</td>
+                    <td width="10%">Gender</td>
+                    <td width="8%">Class</td>
+                    <td width="8%">Marks</td>
+                    <td width="8%">Passing</td>
+                    <td width="24%">Email</td>
+                    <td width="16%">City</td>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+            
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- Table2 section starts here it hidden section which only render when there is requirment for two tables -->
+    <section id="table2" class="container">
+        <table class="content_table">
+            <thead id="table_head">
+                <tr height="45px">
+                    <td width="6%">ID</td>
+                    <td width="20%">Name</td>
+                    <td width="10%">Gender</td>
+                    <td width="8%">Class</td>
+                    <td width="8%">Marks</td>
+                    <td width="8%">Passing</td>
+                    <td width="24%">Email</td>
+                    <td width="16%">City</td>
+                </tr>
+            </thead>
+            <tbody id="table2_body">
+            
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- JS linked here -->
+    <script src="script.js"></script>
+</body>
+</html>
